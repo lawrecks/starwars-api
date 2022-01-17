@@ -1,0 +1,12 @@
+{
+  "development": {
+    "ENV": "SWAPI_DATABASE_DEV_URL"
+  },
+  "test": {
+    "ENV": "SWAPI_DATABASE_TEST_URL"
+  },
+  "production": {
+    "ENV": "SWAPI_DATABASE_PROD_URL"
+  },
+  "sql-file": true
+}
