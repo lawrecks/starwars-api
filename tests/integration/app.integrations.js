@@ -13,4 +13,14 @@ describe('Index API', () => {
         done();
       });
   });
+
+  it('should return error response for non-existent route', (done) => {
+    request(app)
+      .get('/api/v1/shs')
+      .set('Accept', 'application/json')
+      .end((req, res) => {
+        expect(res.body.status).to.be.equal(404);
+        done();
+      });
+  });
 });
