@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import movieRoutes from './movie.routes';
+import characterRoutes from './character.routes';
 
 const router = Router();
 
@@ -14,5 +15,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/movies', movieRoutes);
+router.use('/characters', characterRoutes);
 
 export default router;
