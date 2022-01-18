@@ -6,7 +6,7 @@ import * as movieHelpers from '../utils/helpers/movie.helpers';
 
 const getCommentsCount = async (data) => db.any(commentQueries.countComments, [data]);
 
-const fetchMovies = async () => {
+export const fetchMovies = async () => {
   const response = await sendHttpRequest('https://swapi.dev/api/films/', 'GET');
   if (response.status !== 200) {
     throw Error('Error fetching movies', 500);
@@ -21,4 +21,17 @@ const fetchMovies = async () => {
   return finalData;
 };
 
-export default fetchMovies;
+export const addComment = async (data) => {
+  const [comment] = await db.any(commentQueries.addComment, [
+    data.episodeId,
+    data.comment,
+    data.ip,
+  ]);
+
+  return comment;
+};
+
+export const fetchMovieComments = async (params) => {
+  const { episodeId } = params;
+  return db.any(commentQueries.getComments, [episodeId]);
+};
