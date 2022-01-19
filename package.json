@@ -18,8 +18,7 @@
     ]
   },
   "scripts": {
-    "prestart": "rimraf build && babel-node app --out-dir build",
-    "start": "node build/index.js",
+    "start": "node --require @babel/register ./app/index.js",
     "dev": "nodemon --exec babel-node app/index.js",
     "pretest": "npm run migrate-test:down && npm run migrate-test:up",
     "test": "cross-env NODE_ENV=test nyc --require @babel/register --reporter=lcov --reporter=text --reporter=text-summary mocha --exit --recursive --timeout=150000 tests/**/*.js",
