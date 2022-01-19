@@ -28,7 +28,8 @@
     "migrate-test:up": "db-migrate up --config database.json -e test",
     "migrate-test:down": "db-migrate down -c 100 --config database.json -e test",
     "lint": "eslint . --ext .js ./",
-    "lint-fix": "eslint . --ext .js ./ --fix"
+    "lint-fix": "eslint . --ext .js ./ --fix",
+    "postinstall": "npm run migrate:up"
   },
   "repository": {
     "type": "git",
