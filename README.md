@@ -80,7 +80,7 @@ You will need Node.js (version 14 and above) and a node global package installed
 
 ## Documentation
 
-postman: 
+postman: https://documenter.getpostman.com/view/10148336/UVXnJF7g
 
 
 ## Show your support
