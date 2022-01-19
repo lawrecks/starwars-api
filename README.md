@@ -15,7 +15,7 @@ An application that provides API endpoints for listing Star Wars movies with the
 
 ## Requirements
 
-You will need Node.js (version 10 and above) and a node global package installed in your environment.
+You will need Node.js (version 14 and above) and a node global package installed in your environment.
 
 ### Node
 
@@ -41,9 +41,9 @@ You will need Node.js (version 10 and above) and a node global package installed
     ##### verification Commands
 
         $ node -v
-        v10.16.0 (recommended for this project)
+        v14.17.5 (recommended for this project)
         $ npm -v
-        6.9.0
+        6.14.14
     If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
     ##### update Command
