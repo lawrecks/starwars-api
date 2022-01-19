@@ -12,7 +12,7 @@ initConfig(app);
 
 db.connect()
   .then((operation) => {
-    app.listen(process.env.PORT || 5000, () => {
+    app.listen(port, () => {
       operation.done();
       logger.info(`Server started at ${host}:${port}/api/${apiVersion}/`);
     });
