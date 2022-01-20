@@ -26,8 +26,6 @@ You will need Node.js (version 14 and above) and a node global package installed
 
 - #### Node installation on Ubuntu
 
-    You can install nodejs and npm easily with apt install, just run the following commands.
-
     ##### Installation Commands
 
         $ sudo apt install nodejs
@@ -38,17 +36,12 @@ You will need Node.js (version 14 and above) and a node global package installed
     You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
     If the installation was successful, you should be able to run the following command.
 
-    ##### verification Commands
+    ##### Verify versions
 
         $ node -v
-        v14.17.5 (recommended for this project)
+        v14.17.5
         $ npm -v
         6.14.14
-    If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
-
-    ##### update Command
-
-        $ npm install npm -g
 
 ---
 ## Clone this project
